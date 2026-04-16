@@ -2,7 +2,9 @@
 
 This project is designed as a modular Python application with a clean separation of responsibilities. The initial files created in Step 1 are:
 
-- `models/__init__.py`: defines the `models` package and will host cash flow and product data model definitions.
+- `models/__init__.py`: defines the `models` package and exports the core data classes.
+- `models/cash_flow.py`: defines the `CashFlow` dataclass with required fields `product_name`, `type`, `date`, `amount`, `currency`, and `description`.
+- `models/product_template.py`: defines the `ProductTemplate` dataclass with product metadata and default conventions.
 - `services/__init__.py`: defines the `services` package and will contain schedule generation, aggregation, and business logic.
 - `ui/__init__.py`: defines the `ui` package and will contain Streamlit app entry points and UI components.
 - `data/__init__.py`: defines the `data` package for sample inputs or future configuration files.
