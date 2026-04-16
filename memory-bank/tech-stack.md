@@ -36,7 +36,7 @@ This project should use a simple, robust stack focused on Python for cash flow m
   - Aggregation, discounting, PV, and IRR valuation functions
 - `ui/`
   - Streamlit app and visualization components
-- `data/` (optional)
+- `data/`
   - Example product definitions, sample cash flow inputs, and curves
 
 ## Testing
@@ -46,9 +46,9 @@ This project should use a simple, robust stack focused on Python for cash flow m
   - For validating cash flow object structure and input parameters
 
 ## Dependency Management
-- `venv` or `pip-tools`
+- `venv`
   - Keep dependencies isolated and reproducible
-- `requirements.txt` or `pyproject.toml`
+- `requirements.txt`
   - Simple dependency listing for installation
 
 ## Deployment / Running

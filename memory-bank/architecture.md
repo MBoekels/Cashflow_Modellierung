@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This project is designed as a modular Python application with a clean separation of responsibilities. The initial files created in Step 1 are:
+This project is designed as a modular Python application with a clean separation of responsibilities. The files are:
 
 - `models/__init__.py`: defines the `models` package and exports the core data classes.
 - `models/cash_flow.py`: defines the `CashFlow` dataclass with required fields `product_name`, `type`, `date`, `amount`, `currency`, and `description`.

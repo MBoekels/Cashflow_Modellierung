@@ -5,9 +5,10 @@
 2. **Anti-Monolith Policy:** NEVER suggest adding more than 100 lines of code to a single file. If a feature is complex, split it into `models/`, `services/`, or `utils/`.
 3. **File Creation:** When providing code, ALWAYS specify the target file path at the top of the snippet (e.g., `# File: services/aggregators.py`).
 4. **Consistency:** After any major architectural change, explicitly remind the user to update `memory-bank/@architecture.md`.
+5. **Testing:** For every new function or class, provide a corresponding test case in a `tests/` directory. Use `pytest` for testing.
 
 ## Tech Stack & Financial Logic
-- **Environment:** Python 3.12+, Streamlit (UI), Pandas/Numpy (Data).
+- **Environment:** Python 3.12+, Streamlit (UI), Pandas/Numpy (Data), Pytest (Testing).
 - **Core Logic:** - Default Day-Count: 30/360.
     - Business-Day Adjustment: Following Business Day.
     - Support per-product overrides for these conventions.
