@@ -1,0 +1,31 @@
+[project]
+name = "cashflow_modellierung"
+version = "0.1.0"
+description = "Cash flow modeling and schedule generation with Streamlit UI."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+keywords = ["cashflow", "streamlit", "finance", "schedule", "modeling"]
+authors = [ { name = "Cashflow Modellierung" } ]
+
+[project.dependencies]
+streamlit = "*"
+pandas = "*"
+numpy = "*"
+python-dateutil = "*"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-watch",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest]
+minversion = "7.0"
+addopts = ["-q"]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -12,3 +12,10 @@
 - Added `models/cash_flow.py` defining `CashFlow` with required fields.
 - Added `models/product_template.py` defining `ProductTemplate` and product convention defaults.
 - Exported model classes from `models/__init__.py` for easy imports.
+
+## Step 3 Completed
+
+- Created `services/date_utils.py` with default `30/360` day count logic.
+- Added business-day adjustment helpers including `modified_following`.
+- Added frequency normalization and quarterly schedule date generation.
+- Added `tests/test_date_utils.py` to validate business day behavior and schedule generation.
