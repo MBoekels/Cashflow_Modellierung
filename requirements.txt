@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+python-dateutil
+pytest
+pytest-watch
