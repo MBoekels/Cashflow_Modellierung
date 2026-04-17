@@ -8,6 +8,7 @@ This project is designed as a modular Python application with a clean separation
 - `services/__init__.py`: defines the `services` package and contains schedule generation, aggregation, business logic, and convention helpers.
 - `services/date_utils.py`: contains day-count conventions, business-day adjustment, frequency normalization, and schedule date generation.
 - `services/schedule_generator.py`: converts product parameters into validated cash flow schedules and returns ordered `CashFlow` objects.
+- `services/portfolio.py`: combines multiple product schedules and aggregates totals by date and currency.
 - `ui/__init__.py`: defines the `ui` package and will contain Streamlit app entry points and UI components.
 - `data/__init__.py`: defines the `data` package for sample inputs or future configuration files.
 - `utils/__init__.py`: defines the `utils` package for reusable helpers such as currency utilities and common helpers.

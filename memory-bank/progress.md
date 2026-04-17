@@ -25,3 +25,9 @@
 - Added `services/schedule_generator.py` to generate validated cash flow schedules from product parameters.
 - Implemented validation for required product fields, frequency rules, and date ordering.
 - Added `tests/test_schedule_generator.py` to verify schedule output, maturity handling, and invalid input errors.
+
+## Step 5 Completed
+
+- Added `services/portfolio.py` for merging product schedules and aggregating cash flows by date and currency.
+- Added `tests/test_portfolio.py` to verify schedule merging, aggregation, and currency-aware summaries.
+- Confirmed Step 5 via `venv\Scripts\python.exe -m pytest tests/test_portfolio.py`.
