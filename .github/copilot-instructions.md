@@ -2,6 +2,7 @@
 
 # CRITICAL RULES (Read First)
 1. **Memory Bank Access:** Always read `memory-bank/@architecture.md` and `memory-bank/@product-requirements.md` before generating code.
+1.a **Virtual Environment:** If the workspace contains a `venv`, use that environment for Python commands, pytest, and package installs. On Windows use `./venv/Scripts/python.exe`; on Unix use `./venv/bin/python`.
 2. **Anti-Monolith Policy:** NEVER suggest adding more than 100 lines of code to a single file. If a feature is complex, split it into `models/`, `services/`, or `utils/`.
 3. **File Creation:** When providing code, ALWAYS specify the target file path at the top of the snippet (e.g., `# File: services/aggregators.py`).
 4. **Consistency:** After any major architectural change, explicitly remind the user to update `memory-bank/@architecture.md`.

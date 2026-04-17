@@ -19,3 +19,9 @@
 - Added business-day adjustment helpers including `modified_following`.
 - Added frequency normalization and quarterly schedule date generation.
 - Added `tests/test_date_utils.py` to validate business day behavior and schedule generation.
+
+## Step 4 Completed
+
+- Added `services/schedule_generator.py` to generate validated cash flow schedules from product parameters.
+- Implemented validation for required product fields, frequency rules, and date ordering.
+- Added `tests/test_schedule_generator.py` to verify schedule output, maturity handling, and invalid input errors.
